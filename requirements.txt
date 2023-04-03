@@ -1,1 +1,1 @@
-pip isntall requests
+pip isntall requests==2.*
