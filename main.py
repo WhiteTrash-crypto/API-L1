@@ -2,9 +2,9 @@ import requests
 
 
 def main():
-    article_id = ["Череповец", "London", "SVO"]
+    cities = ["Череповец", "London", "SVO"]
     payload = {"n": "", "M": "", "T": "", "q": "", "lang": "ru"}
-    for city in article_id:
+    for city in cities:
         response = requests.get(f"https://wttr.in/{city}", params=payload)
         response.raise_for_status()
         print(response.text)
